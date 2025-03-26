@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="./css/checkout2.css"/>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+        <a href="./prototypeindex.html">
+            <img src="./images/WhatsApp Image 2024-11-22 at 04.17.28.png" width="80px" alt="ADO's Logo" class="Logo">
+        </a>
+    </div>
+</header>
+  <section>
+    <div class="container">
+      <div class="card front-face">
+        <header>
+          <span class="logo">
+            <img src="./images/VISA-logo-300x169.png" alt="visa logo" />
+          </span>
+          <img src="./images/pngwing.com.png" alt="picture of a card chip" class="chip" />
+        </header>
+
+        <div class="card-details">
+          <div class="name-number">
+            <h6>Card Number</h6>
+            <h5>
+              <input type="text" id="cardNumber" maxlength="19" placeholder="#### #### #### ####">
+            </h5>
+            <h6>
+              <label for="cardHolder">Card Holder</label>
+            </h6>
+            <h5>
+              <input type="text" id="cardHolder" placeholder="FULL NAME">
+            </h5>
+          </div>
+
+          <div class="valid-date">
+            <h6>Valid Thru</h6>
+            <div>
+              <input
+                type="text"
+                id="expiryMonth"
+                placeholder="MM"
+                maxlength="2"
+                style="width: 40px; text-align: center;"
+              />
+              /
+              <input
+                type="text"
+                id="expiryYear"
+                placeholder="YY"
+                maxlength="2"
+                style="width: 40px; text-align: center;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card back-face">
+        <h6>For customer service call +123 456 7890 or email at visacard@gmail.com</h6>
+        <span class="magnetic-strip"></span>
+        <div class="signature">
+          <input
+            type="text"
+            id="cvvInput"
+            placeholder="CVV"
+            maxlength="3"
+            style="width: 60px; text-align: center; color: black;"
+          />
+        </div>
+        <h5>
+          If found, please return this card to its rightful owner or contact the issuing bank immediately. For assistance, call +123 456 7890 or email visa_support@gmail.com. Thank you for your honesty!
+        </h5>
+      </div>
+      
+    </div>
+  </section>
+  <script src="./js/checkout2.js"></script>
+</body>
+</html>
